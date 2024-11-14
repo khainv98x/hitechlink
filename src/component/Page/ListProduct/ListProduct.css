@@ -1,0 +1,26 @@
+.list-product {
+  gap: 16px;
+  justify-content: center;
+}
+.list-product .card-product {
+  margin-top: 16px;
+}
+.list-product .card .card-img-top {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+}
+/* .list-filter ul{
+    display: flex;
+    list-style: none;
+}
+.list-filter ul li{
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-bottom: 2px solid gray;
+}
+.list-filter ul li:hover{
+    color: orange;
+    cursor: pointer;
+    border-bottom: 2px solid orange;
+} */

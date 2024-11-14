@@ -1,0 +1,24 @@
+.contactus .phone{
+    background-image: url(../../../assets/icon/phone.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p-title{
+    display: flex;
+    width: 100%;
+    color: white;
+    background: linear-gradient(
+    155deg,
+    rgb(0, 45.49, 85.10) 17%,
+    rgba(32, 178, 7, 1) 84%
+  );
+  background-blend-mode: normal;
+
+    /* background-color: #0074D9; */
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    justify-content: center;
+}
+.p-title h3{
+    line-height: 5rem;
+}

@@ -1,0 +1,15 @@
+.order-cart{
+    display: flex;
+    align-items: center;
+}
+.order-cart .order-item{
+    display: flex;
+    align-items: center;
+}
+.order-cart .order-image{
+    width: clamp(10rem, 1vw, 20rem);
+}
+.order-cart h5 {
+    font-size: clamp(1rem, 1.2vw, 2rem); /*nhỏ nhất, ưu tiên, tối đa */
+  }
+  

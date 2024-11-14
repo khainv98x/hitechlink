@@ -1,0 +1,56 @@
+.aboutus .banner{
+    position: relative;
+}
+.aboutus .banner .image-effect {
+    width: 100%;
+    height: auto;
+    /* Áp dụng gradient để tạo hiệu ứng mờ dần từ trái qua phải */
+    -webkit-mask-image: linear-gradient(to left, black 0%, transparent 70%);
+    mask-image: linear-gradient(to left, black 0%, transparent 70%);
+}
+.aboutus .banner .abouttitle{
+   position: absolute;
+   display: flex;
+   gap: 16px;
+   align-items: center;
+   top:40%;
+   left: 5%;
+}
+.aboutus .banner .abouttitle div >h5{
+    font-weight: bold;
+    color: #0074D9;
+}
+.aboutus .banner .abouttitle div h1 >span{
+    color: #FF851B;
+
+}
+.aboutus h1{
+font-size: 5vh;
+font-weight: 900;
+}
+.aboutus .banner .abouttitle img{
+    width: 20%;
+}
+.aboutus p{
+    text-align: justify;
+}
+.aboutus span {
+    font-weight: bold;
+}
+.aboutus h2{
+    margin: 24px auto;
+    font-weight: bolder;
+}
+.aboutus .ab-title{
+    min-height: 20vh;
+    max-height:  20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0074D9;
+    padding: 16px 48px;
+    text-align: center;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); 
+    margin-bottom: 24px;
+}

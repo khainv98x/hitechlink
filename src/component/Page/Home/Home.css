@@ -1,0 +1,35 @@
+
+  .home .contact {
+    position: sticky;
+    top: 132px; /* Khi trở thành sticky, sẽ dính vào top */
+    background-color: #F5F5F5;
+    z-index: 10;
+  }
+  
+  .home .contact .c-title{
+    display: flex;
+    width: 100%;
+    color: white;
+    background: linear-gradient(
+    155deg,
+    rgb(0, 45.49, 85.10) 17%,
+    rgba(32, 178, 7, 1) 84%
+  );
+  background-blend-mode: normal;
+
+    /* background-color: #0074D9; */
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    justify-content: center;
+}
+.home .contact .c-title h3{
+    line-height: 5rem;
+}
+.home .contact h4{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #0074D9;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+
+
+}

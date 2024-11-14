@@ -1,0 +1,31 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.header .menu{
+    margin:0 24px;
+    color: black;
+    padding: 0 10px;
+
+}
+.header .menu:hover{
+    background-color: rgba(42, 42, 255, 0.755);
+    border-radius: 10px;
+   
+}
+.header .menu:active{
+    background-color: blue;
+}
+.header .menu.active{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.header .cart{
+    font-size: xx-large;
+}
+.header img{
+    width: 10vw;
+}  

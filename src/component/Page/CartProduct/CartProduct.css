@@ -1,0 +1,99 @@
+.cart-row{
+  align-items: flex-start;
+}
+.cart-sum{
+  display: flex;
+  width: 100%;
+  margin: 1% 0;
+  border: 2px solid blue;
+  border-radius: 8px; /* Bo góc card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+}
+.cart-sum .select-all{
+  display: flex;
+  gap: 12px;
+}
+.contain-cart {
+  display: flex;
+  width: 100%;
+  margin: 1% 0;
+  border: 2px solid blue;
+  border-radius: 8px; /* Bo góc card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+}
+.cart-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.cart-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  font-size: 80%; 
+}
+.cart-right .number{
+  display: flex;
+  gap: 12px;
+}
+
+.cart-item .item-image {
+  width: 20%;
+}
+.cart-item {
+  display: flex;
+  gap: 12px;
+  background-color: #ffffff; /* Màu nền của card */
+  border-radius: 8px; /* Bo góc card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hiệu ứng khi hover */
+}
+
+.cart-item:hover {
+  transform: translateY(-5px); /* Nâng card lên khi hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+}
+
+.cart-item .item-title h5 {
+  font-size: 80%;
+}
+
+
+.cart-right .number span{
+  text-decoration: none;
+}
+.cart-right .price{
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+  
+}
+
+.payment{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  border: 2px solid blue;
+  background-color: #ffffff; /* Màu nền của card */
+  border-radius: 8px; /* Bo góc card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+}
+
+.s_button >p {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  color: white;
+  background-color: rgba(42, 42, 255, 0.755);
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  font-size: xx-large;
+  line-height: 60px;
+}
+.s_total{
+  display: flex;
+  justify-content: space-between;
+}
