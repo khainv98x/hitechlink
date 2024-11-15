@@ -343,7 +343,7 @@
 
 // export default Order;
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { UseCart } from "../../context/CartContext";
@@ -352,12 +352,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
-
+import emailjs from "@emailjs/browser";
 const Order = () => {
   const { cart, handleDelPay } = UseCart();
   const [selectCart, setSelectCart] = useState([]);
   const navigate = useNavigate();
-
+  const form = useRef();
   useEffect(() => {
     const localSelected = JSON.parse(localStorage.getItem("SELECTED_CART"));
     const arr = cart.filter((item) => localSelected.includes(item.id));
@@ -387,6 +387,18 @@ const Order = () => {
     }),
     onSubmit: (values) => {
       handleAddCart(values);  // Gọi handleAddCart khi submit form
+       emailjs
+        .sendForm("service_yofwzpa", "template_55z68f8", form.current, {
+          publicKey: "m3GtRXZJBw3T5MTR0",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
     },
   });
 
@@ -423,7 +435,7 @@ const Order = () => {
         <Container>
           <Row>
             <Col>
-              <form id="form-order" onSubmit={formik.handleSubmit}>
+              <form ref={form} id="form-order" onSubmit={formik.handleSubmit}>
                 <Accordion defaultActiveKey={["0"]} alwaysOpen>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
